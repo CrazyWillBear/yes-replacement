@@ -1,0 +1,7 @@
+# Target directory is where binaries and other objects
+# are stored
+/target/*
+
+# Cargo.lock is auto generated every time the project
+# is compiled, so it is unnecessary to have in the repo
+/Cargo.lock
