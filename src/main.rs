@@ -8,6 +8,7 @@
 */
 
 use std::env;
+use std::io::Write;
 
 // Software Version: '0.1.0'
 const VER: &str = "0.1.0";
@@ -59,5 +60,5 @@ fn main() {
   }
 
   // print statement forever (until killed)
-  loop { println!("{}", statement); }
+  loop { std::io::stdout().write(format!("{}\n", statement).as_bytes()); }
 }
