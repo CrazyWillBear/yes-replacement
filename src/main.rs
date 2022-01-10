@@ -8,6 +8,7 @@
 */
 
 use std::env;
+use std::io::stdout;
 use std::io::Write;
 
 // Software Version: '0.1.0'
@@ -60,5 +61,5 @@ fn main() {
   }
 
   // print statement forever (until killed)
-  loop { std::io::stdout().write(format!("{}\n", statement).as_bytes()); }
+  loop { stdout().write(format!("{}\n", statement).as_bytes()); }
 }
